@@ -1,0 +1,19 @@
+name: osticket-lab
+description: Setup guide and documentation for SOC ticketing system
+version: 1.0
+
+environment:
+  os: Ubuntu 22.04
+  web_server: Apache2
+  database: MySQL
+  php_version: 8.1
+
+features:
+  - Ticket creation
+  - User authentication
+  - Admin dashboard
+  - Custom branding
+
+troubleshooting:
+  login_issue: reset password with bcrypt
+  pip_error: use venv to isolate environment
