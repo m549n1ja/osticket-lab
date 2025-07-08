@@ -2,52 +2,40 @@
 
 This project documents the setup of a real-world style ticketing system using osTicket in a home lab environment. It simulates SOC workflows such as incident tracking, escalation, and resolution documentation.
 
----
-
 ## Project Objective
 
-The goal of this lab is to replicate a functional SOC Helpdesk system that mirrors enterprise environments. This setup supports the triage, tracking, and resolution of security events in a controlled, documented, and reproducible way.
-
----
+To deploy and configure a functional SOC helpdesk system that replicates enterprise workflows. This simulation supports alert triage, documentation, and analyst collaboration — all essential components of security operations.
 
 ## Repository Contents
 
 - Step-by-step osTicket installation on Ubuntu
-- MySQL configuration for osTicket backend
-- Apache HTTP/HTTPS setup
-- Troubleshooting and solutions for setup issues
-- Password recovery via bcrypt and SQL
-- Customization notes and plugin references
-
----
+- MySQL configuration for the osTicket backend
+- Apache HTTP/HTTPS setup for secure web access
+- Password recovery using bcrypt and MySQL
+- Project YAML file for GitHub Actions or metadata integration
+- Clean configuration for easy deployment in other labs
 
 ## Build Summary
 
-This lab was completed on a VirtualBox VM running Ubuntu. A LAMP stack (Linux, Apache, MySQL, PHP) was configured to host osTicket. The web installer was used to complete the initial configuration, and password security was enforced using bcrypt hashing via Python virtual environment.
-
----
-
-## Key Issues and Solutions
-
-- **White screen after setup**: Resolved by correcting Apache SSL site configuration.
-- **Admin login failure**: Fixed by querying the MySQL database and updating the password hash using bcrypt.
-- **Pip install errors**: Addressed by isolating the environment using Python's virtualenv module.
-
----
+- **Host System**: ASUS ZenBook (VirtualBox running Ubuntu)
+- **Virtual Machine OS**: Ubuntu 22.04 LTS
+- **Hosting Stack**: LAMP (Linux, Apache, MySQL, PHP)
+- **Ticketing Platform**: osTicket v1.18+
+- **Access URL**: `https://localhost/osticket/scp/login.php`
 
 ## Technical Stack
 
-- Ubuntu Server (VM on VirtualBox)
-- Apache2
-- MySQL
-- PHP
-- osTicket 1.18.2
-- Python 3.12 with bcrypt (for password management)
+| Component     | Technology         |
+|---------------|--------------------|
+| OS            | Ubuntu 22.04 LTS   |
+| Web Server    | Apache2            |
+| Database      | MySQL              |
+| Language      | PHP 8.x            |
+| Ticketing     | osTicket           |
+| Encryption    | bcrypt via Python  |
+| DevOps        | Git, GitHub        |
 
----
+## Project Status
 
-## Status
+**Complete** — osTicket is fully installed and operational. Accessible via web browser. Password authentication verified. Version-controlled via GitHub.
 
-The osTicket system is fully operational and accessible at:
-
-https://localhost/osticket/scp/login.php
