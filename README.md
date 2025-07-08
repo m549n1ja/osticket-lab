@@ -39,3 +39,23 @@ To deploy and configure a functional SOC helpdesk system that replicates enterpr
 
 **Complete** — osTicket is fully installed and operational. Accessible via web browser. Password authentication verified. Version-controlled via GitHub.
 
+## Screenshots
+
+### osTicket Folder Structure  
+![Folder Structure](screenshots/Screenshot_from_2025-07-08_11-10-01.png)
+
+### MySQL User Table View  
+![MySQL Staff Table](screenshots/Screenshot_from_2025-07-08_11-15-50.png)
+
+### Apache Web Root osTicket Installation  
+![osTicket Web Root](screenshots/Screenshot_from_2025-07-08_11-18-35.png)
+
+### osTicket Interface - Create New Ticket  
+![Create Ticket](screenshots/Screenshot_from_2025-07-08_11-54-34.png)
+
+### osTicket Interface - Submit Ticket  
+![Submit Ticket](screenshots/Screenshot_from_2025-07-08_11-56-23.png)
+
+### osTicket Ticket View with SOC Action  
+![Ticket View](screenshots/Screenshot_from_2025-07-08_11-57-46.png)
+
